@@ -3,32 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rajeshwari Khot Portfolio</title>
+  <title>Rajeshwari Khot Portfolio - Dark Theme</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <style>
     body {
-      background-color: #f0f2f5;
+      background-color: #121212;
+      color: #e0e0e0;
       font-family: 'Arial', sans-serif;
     }
     /* Navigation */
     .navbar {
-      background-color: #007bff;
+      background-color: #1f1f1f;
     }
     .navbar-brand, .nav-link {
-      color: #fff !important;
+      color: #e0e0e0 !important;
+    }
+    .nav-link:hover {
+      color: #ffffff !important;
     }
     /* Hero Section */
     .hero {
-      background: #007bff;
-      color: #fff;
+      background: #1f1f1f;
+      color: #e0e0e0;
       padding: 100px 0;
       text-align: center;
       position: relative;
     }
     .hero img {
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
-      border: 5px solid #fff;
+      object-fit: cover;
+      border: 3px solid #007bff;
       margin-bottom: 20px;
     }
     /* Section Titles */
@@ -47,15 +54,16 @@
       border-radius: 8px;
       padding: 20px;
       margin-bottom: 30px;
-      background: #fff;
+      background: #1e1e1e;
     }
     /* Project Cards */
     .project-card {
-      border: 1px solid #ddd;
+      border: 1px solid #444;
       border-radius: 8px;
       overflow: hidden;
       margin-bottom: 20px;
       transition: transform 0.3s;
+      background: #1e1e1e;
     }
     .project-card:hover {
       transform: scale(1.02);
@@ -67,16 +75,22 @@
     }
     /* Contact Form */
     .contact-form {
-      background: #fff;
+      background: #1e1e1e;
       padding: 30px;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
     }
     footer {
-      background: #343a40;
-      color: #fff;
+      background: #1f1f1f;
+      color: #e0e0e0;
       padding: 20px 0;
       text-align: center;
+    }
+    a {
+      color: #007bff;
+    }
+    a:hover {
+      color: #66b2ff;
     }
   </style>
 </head>
@@ -86,7 +100,7 @@
     <div class="container">
       <a class="navbar-brand" href="#">Rajeshwari Khot</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#fff;"></i></span>
+        <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#e0e0e0;"></i></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
@@ -104,7 +118,8 @@
   <!-- Hero Section -->
   <section id="home" class="hero">
     <div class="container">
-      <img src="https://raw.githubusercontent.com/Rajeshwari-khot/profile/main/raji.jpg" alt="Avatar", style="width:150px; height:150px; border-radius:50%; object-fit:cover;">
+      <!-- Dynamically resized avatar from GitHub -->
+      <img src="https://raw.githubusercontent.com/Rajeshwari-khot/profile/main/raji.jpg" alt="Avatar">
       <h1>Rajeshwari Khot</h1>
       <p>Data Engineer | AWS | PySpark | SQL | Big Data</p>
       <p>
@@ -113,7 +128,7 @@
       </p>
       <p>
         <a href="https://www.linkedin.com/in/rajeshwari-khot-804284177/" class="text-white me-3" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        <a href="https://github.com/rajeshwarikhot" class="text-white" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://github.com/rajeshwari-khot" class="text-white" target="_blank"><i class="fab fa-github"></i> GitHub</a>
       </p>
     </div>
   </section>
@@ -178,7 +193,7 @@
   <section id="projects" class="container border-section">
     <h2 class="section-title"><i class="fas fa-code"></i> Personal Projects</h2>
     <div class="row">
-      <!-- Sample Project Card 1 -->
+      <!-- Update project details based on your GitHub repositories -->
       <div class="col-md-4">
         <div class="project-card">
           <img src="https://via.placeholder.com/350x200" alt="Project Image">
@@ -191,7 +206,6 @@
           </div>
         </div>
       </div>
-      <!-- Sample Project Card 2 -->
       <div class="col-md-4">
         <div class="project-card">
           <img src="https://via.placeholder.com/350x200" alt="Project Image">
@@ -204,7 +218,6 @@
           </div>
         </div>
       </div>
-      <!-- Sample Project Card 3 -->
       <div class="col-md-4">
         <div class="project-card">
           <img src="https://via.placeholder.com/350x200" alt="Project Image">
@@ -223,7 +236,7 @@
   <!-- Contact Section -->
   <section id="contact" class="container border-section">
     <h2 class="section-title"><i class="fas fa-envelope"></i> Contact</h2>
-    <form>
+    <form class="contact-form">
       <div class="mb-3">
         <label for="name" class="form-label">Name</label>
         <input type="text" class="form-control" id="name" placeholder="Your Name">
