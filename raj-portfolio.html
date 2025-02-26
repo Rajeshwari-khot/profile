@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rajeshwari Khot Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    body {
+      background-color: #f0f2f5;
+      font-family: 'Arial', sans-serif;
+    }
+    /* Navigation */
+    .navbar {
+      background-color: #007bff;
+    }
+    .navbar-brand, .nav-link {
+      color: #fff !important;
+    }
+    /* Hero Section */
+    .hero {
+      background: #007bff;
+      color: #fff;
+      padding: 100px 0;
+      text-align: center;
+      position: relative;
+    }
+    .hero img {
+      border-radius: 50%;
+      border: 5px solid #fff;
+      margin-bottom: 20px;
+    }
+    /* Section Titles */
+    .section-title {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: 28px;
+      border-bottom: 2px solid #007bff;
+      display: inline-block;
+      padding-bottom: 5px;
+      color: #007bff;
+    }
+    /* Border for sections */
+    .border-section {
+      border: 2px solid #007bff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 30px;
+      background: #fff;
+    }
+    /* Project Cards */
+    .project-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      transition: transform 0.3s;
+    }
+    .project-card:hover {
+      transform: scale(1.02);
+    }
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    /* Contact Form */
+    .contact-form {
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #343a40;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">Rajeshwari Khot</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#fff;"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home"><i class="fas fa-home"></i> Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about"><i class="fas fa-user"></i> About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills"><i class="fas fa-laptop-code"></i> Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <img src="https://i.pravatar.cc/150?img=3" alt="Avatar">
+      <h1>Rajeshwari Khot</h1>
+      <p>Data Engineer | AWS | PySpark | SQL | Big Data</p>
+      <p>
+        <a href="tel:+918904318675" class="text-white me-3"><i class="fas fa-phone"></i> +91 8904318675</a>
+        <a href="mailto:rajeshwarikhot11@gmail.com" class="text-white"><i class="fas fa-envelope"></i> Email</a>
+      </p>
+      <p>
+        <a href="https://www.linkedin.com/in/rajeshwari-khot-804284177/" class="text-white me-3" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/rajeshwarikhot" class="text-white" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container border-section">
+    <h2 class="section-title"><i class="fas fa-user"></i> About Me</h2>
+    <p>Hi, I'm Rajeshwari Khot, a passionate Data Engineer with over 3 years of experience in designing and implementing scalable data pipelines, ETL workflows, and big data solutions. I specialize in leveraging AWS services, Apache Spark (PySpark), Snowflake, SQL, and Python to solve complex data challenges in healthcare and beyond.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="container border-section">
+    <h2 class="section-title"><i class="fas fa-laptop-code"></i> Technical Skills</h2>
+    <ul>
+      <li><strong>Big Data & ETL:</strong> PySpark, AWS Glue, Snowflake, SQL</li>
+      <li><strong>Programming:</strong> Python (pandas, FastAPI)</li>
+      <li><strong>Cloud:</strong> AWS (S3, EC2, Glue, Lambda)</li>
+      <li><strong>Databases:</strong> Oracle, Snowflake</li>
+      <li><strong>API Development:</strong> FastAPI, Swagger, Postman</li>
+    </ul>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="container border-section">
+    <h2 class="section-title"><i class="fas fa-briefcase"></i> Professional Experience</h2>
+    <div class="mb-4">
+      <h3>ConcertAI <small class="text-muted">(May 2023 – Present)</small></h3>
+      <h4>Data Engineer</h4>
+      <div class="ms-3">
+        <h5>EIS – Leqembi Implementation (Client: Eisai)</h5>
+        <ul>
+          <li>Developed scalable data pipelines using PySpark and AWS Glue.</li>
+          <li>Implemented ETL processes to extract, transform, and load data into Snowflake.</li>
+          <li>Optimized data storage solutions using AWS S3 and managed compute resources via AWS EC2.</li>
+          <li>Developed serverless applications using AWS Lambda for event-driven processing.</li>
+        </ul>
+      </div>
+      <div class="ms-3">
+        <h5>TEV Implementation (Client: Teva)</h5>
+        <ul>
+          <li>Designed and maintained robust ETL workflows for big data processing.</li>
+          <li>Managed AWS services including Glue, S3, EC2, and Lambda for seamless data integration.</li>
+          <li>Monitored and optimized data processing jobs for efficiency.</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h3>Dvara Solutions (Aroha Technologies) <small class="text-muted">(Oct 2021 – May 2023)</small></h3>
+      <h4>Software Engineer</h4>
+      <div class="ms-3">
+        <h5>Northern Arc Service (Client: Northern Arc)</h5>
+        <ul>
+          <li>Designed and developed RESTful APIs using FastAPI.</li>
+          <li>Performed comprehensive testing using Swagger and Postman.</li>
+          <li>Utilized Python (pandas) for data processing and integrated SQL operations with Oracle.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container border-section">
+    <h2 class="section-title"><i class="fas fa-code"></i> Personal Projects</h2>
+    <div class="row">
+      <!-- Sample Project Card 1 -->
+      <div class="col-md-4">
+        <div class="project-card">
+          <img src="https://via.placeholder.com/350x200" alt="Project Image">
+          <div class="p-3">
+            <h5>Project One</h5>
+            <p>A data engineering project showcasing ETL pipeline development.</p>
+            <a href="https://github.com/Rajeshwari-khot/ProjectOne" target="_blank" class="btn btn-primary btn-sm">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Sample Project Card 2 -->
+      <div class="col-md-4">
+        <div class="project-card">
+          <img src="https://via.placeholder.com/350x200" alt="Project Image">
+          <div class="p-3">
+            <h5>Project Two</h5>
+            <p>A healthcare analytics dashboard built with Python and SQL.</p>
+            <a href="https://github.com/Rajeshwari-khot/ProjectTwo" target="_blank" class="btn btn-primary btn-sm">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Sample Project Card 3 -->
+      <div class="col-md-4">
+        <div class="project-card">
+          <img src="https://via.placeholder.com/350x200" alt="Project Image">
+          <div class="p-3">
+            <h5>Project Three</h5>
+            <p>An ETL automation tool for real-time data processing.</p>
+            <a href="https://github.com/Rajeshwari-khot/ProjectThree" target="_blank" class="btn btn-primary btn-sm">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container border-section">
+    <h2 class="section-title"><i class="fas fa-envelope"></i> Contact</h2>
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Your Name">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Your Email">
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">
+        <i class="fas fa-paper-plane"></i> Send Message
+      </button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Rajeshwari Khot. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
